@@ -46,4 +46,8 @@ function onGalleryClick(event) {
   );
   instance.show();
   console.log(url);
+
+  document.addEventListener('keydown', (event) => {
+    if(event.key === 'Escape')  instance.close()
+  });
 }
